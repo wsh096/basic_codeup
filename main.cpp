@@ -1,9 +1,11 @@
 #include <iostream>
 
-int main() {
-  int n;
-  scanf("%d", &n);
-  printf("%d", n);
-  
-  return 0;
+int main(){
+
+char x;
+scanf("%c", &x);
+printf("%c", x);
+
 }
+
+#include <string>
