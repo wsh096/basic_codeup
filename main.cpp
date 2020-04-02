@@ -2,9 +2,9 @@
 
 int main(){
 
-char data[2001];
-fgets(data,2000,stdin);
-printf("%s",data);
+int a, b;
+scanf("%d.%d",&a, &b);
+printf("%d\n%d",a, b);
 }
 
 //fgets( ) 를 사용하면 공백문자가 포함되어잇는 문장을 입력받아 저장할 수 있다.
