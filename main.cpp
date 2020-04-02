@@ -1,10 +1,10 @@
 #include <iostream>
 
 int main(){
-
-int y, m, d;
-scanf("%d.%d.%d",&y,&m,&d);
-printf("%04d.%02d.%02d",y,m, d);
+//일단 비워두고 입력 받으려 하는 상태
+char data[51]="";
+scanf("%s",data);
+printf("%s",data);
 }
 
-//마지막 출력 때 %02를 사용하거나 그 이상의 숫자를 사용해서 yyyy.mm.dd의 형태를 지정해줄 수 있다.
+//문자 하나는 %c였지만 %string문자배열은 %s로 하고 아예 내장 함수여서 &data와 같은 형태가 불필요
