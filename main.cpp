@@ -2,10 +2,9 @@
 
 int main(){
 
-char x;
-scanf("%c", &x);
-printf("%c", x);
+int a, b;
+scanf("%d%d", &a, &b);
+printf("%d %d", a, b);
 
 }
 
-#include <string>
