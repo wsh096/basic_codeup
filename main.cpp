@@ -2,6 +2,8 @@
 
 int main(){
   int a;
-  scanf("%d",&a);
-  printf("%d", -a);
+  scanf("%c",&a);
+  printf("%c", a+1);
 }
+
+//int나 char이나 상관없네
