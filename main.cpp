@@ -2,8 +2,8 @@
 
 int main(){
   int a;
-  scanf("%o",&a);
-  printf("%d",a);
+  scanf("%x",&a);
+  printf("%o",a);
   }
 //십진수로 받아서 팔진수로 표현
 //%d(10진수 형태)로 입력받고
