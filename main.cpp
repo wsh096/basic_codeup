@@ -1,14 +1,10 @@
 #include <iostream>
 
 int main(){
-  long long int a, b;
-  scanf("%lld %lld",&a, &b);
-  printf("%lld", a/b);
+  unsigned int a, b;
+  scanf("%u %u",&a, &b);
+  printf("%u", a%b);
 }
 
-//int a;
-//scanf("%d", &a);
-//printf("%f", (float)a);
-//와 같이 실행하면, 정수로 저장되어 있는 값을 실수형(float)으로 명시적으로 변환하여 출력한다.
-//어떤 값이나 결과의 데이터형을 강제로 바꾸는 것을 명시적 (데이터)형변환이라고 한다.
-
+//나머지 출력에는 cpp에서는 %를 사용한다
+//음이 아닌 정수를 하기 위해서 unsigned를 사용
