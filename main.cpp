@@ -1,10 +1,9 @@
 #include <iostream>
 
 int main(){
-  unsigned int a, b;
-  scanf("%d %d",&a, &b);
-  printf("%d\n%d\n%d\n%d\n%d\n%.2f\n", a+b, a-b,a*b,a/b,(float)a/b);
+  unsigned int a, b, c;
+  scanf("%d %d %d",&a, &b, &c);
+  printf("%d\n%.1f", a+b+c, (float)(a+b+c)/3);
 }
 
-//C언어에서 정수/정수 연산의 결과는 정수(몫)로 계산된다.
-//실수/정수, 정수/실수, (float)정수/정수, 정수/(float)정수 등의 연산 결과는 실수 값으로 계산된다.//
+//정수를 실수로 바꿔주고 (float)/소수점 1째 자리까지 나오게 .1f 사용//평균 갯수만큼 괄호로 나누기
