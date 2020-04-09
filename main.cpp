@@ -3,13 +3,23 @@
 int main(){
     int a;
     scanf("%d",&a);
-    if(a<0){
-        printf("%s\n","minus");  
-    }else
-        printf("%s\n","plus");
-        if(a%2==0){
-            printf("%s\n","even");
-        }else
-            printf("%s\n","odd");
+    if(a<=100&&a>=90){
+        printf("%s","A");  
+    }
+    else{
+      if(a<=89&&a>=70){
+        printf("%s","B");
+      }
+      else{
+        if(a<=69&&a>=40){
+          printf("%s","C");
+        }
+        else{
+          if(a<=39&&a>=0){
+            printf("%s","D");
+          }
+        }
+      }
+    }
 }
 
