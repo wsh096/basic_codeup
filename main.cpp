@@ -1,12 +1,15 @@
 #include <iostream>
+
 int main(){
-    int a, b;
-    scanf("%d%d",&a, &b);
-    printf("%d", a>b?a:b);
+    int a;
+    scanf("%d",&a);
+    if(a<0){
+        printf("%s\n","minus");  
+    }else
+        printf("%s\n","plus");
+        if(a%2==0){
+            printf("%s\n","even");
+        }else
+            printf("%s\n","odd");
 }
-//a가 b보다 크면 참 아니면 거짓
-// 만약 a<b였으면 a가 b보다 작으면 참 아니면 거짓
-//3개의 요소로 이루어지는 3항(ternary) 연산자는"조건식 ? (참일 때의 값) : (거짓일 때의 값)” 의 형태로 사용하는 연산자이다.
-//- 조건식의 계산 결과가 참인 경우에는 ':' '왼쪽의 값' 또는 '식'으로 바뀌고,
-//- 거짓인 경우에는 ':' '오른쪽의 값' 또는 '식'으로 바뀐다.
 
