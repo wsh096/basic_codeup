@@ -1,25 +1,24 @@
 #include <iostream>
 
 int main(){
-    int a;
-    scanf("%d",&a);
-    if(a<=100&&a>=90){
-        printf("%s","A");  
-    }
-    else{
-      if(a<=89&&a>=70){
-        printf("%s","B");
-      }
-      else{
-        if(a<=69&&a>=40){
-          printf("%s","C");
-        }
-        else{
-          if(a<=39&&a>=0){
-            printf("%s","D");
-          }
-        }
-      }
-    }
+    char a;
+    scanf("%c",&a);
+    switch(a){
+        case 'A':
+        printf("best!!!");
+        break;
+        case 'B':
+        printf("good!!");
+        break;
+        case 'C':
+        printf("run!");
+        break;
+        case 'D':
+        printf("slowly~");
+        break;
+        default:
+        printf("what?");
+        break;//있으나 없으나 차이 없음
+            }
 }
-
+//A는 아스키코드로 65에 해당하기 때문에 스위치의 정수만 사용이 가능한 사용에서 주소를 이용해서 사용이 가능!
