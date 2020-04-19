@@ -2,15 +2,12 @@
 
 int main(){
     int m;
-    
-    reget:
     scanf("%d", &m);
-    while(m==0) goto end;
-    printf("%d\n", m);
-    while(m!=0) goto reget;
+    while(m!=0){
+      printf("%d\n", m);
+      m--;
+    }
     
-    end:
-    return 0;
   
   //1070의 문제의 if를 while로 바꿔주면 끝!
 
