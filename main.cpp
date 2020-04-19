@@ -1,19 +1,18 @@
 #include <iostream>
 
 int main(){
-    int a;
+    int n, m;
+    scanf("%d", &n);
+    reget:
+    scanf("%d", &m);
+    printf("%d\n", m);
+    if(n--!=1) goto reget;
     
-    reload:
-    
-    scanf("%d", &a);
-    if(a ==0) goto end;
-    printf("%d\n", a);
-    if(a!=0) goto reload;
-
-    end:
-    return 0;
-    
-    
+  
+    //n의 숫자를 입력한다.
+    //m의 값이 들어가고 밑에 점차 횟수는 줄어든다.
+    //5가 1이 되면 마지막회차가 된다. 총 5번을 할 수 있다. 
+    //끝
         
          
     
