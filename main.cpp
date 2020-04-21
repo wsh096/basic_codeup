@@ -1,18 +1,15 @@
 #include <iostream>
 
 int main(){
-    int a, b, c , d, e,f; 
+    int a,b; 
     
-    scanf("%d%d%d",&d ,&e, &f);
+    scanf("%X",&a);
     
-    for(a=1;a<=d;a++){
-      for(b=1;b<=e;b++){
-        for(c=1;c<=f;c++){
-          printf("%d %d %d\n", a,b,c);
+    for(b=1;b<=15;b++){
+          printf("%X*%X=%X\n", a,b,a*b);
           }
-        }  
-    }
-}
+         
+} 
 
 //for{
 //  for{
