@@ -1,16 +1,19 @@
 #include <iostream>
 
 int main(){
-    int a,b; 
+    int a,i; 
     
-    scanf("%X",&a);
+    scanf("%d",&a);
     
-    for(b=1;b<=15;b++){
-          printf("%X*%X=%X\n", a,b,a*b);
+    for(i=1;i<=a;i++){
+      if(i%10==3||i%10==6||i%10==9){
+        printf("%s ","X");
+        }else{
+          printf("%d ",i);
           }
-         
+    }
 } 
-
+//20까지 커버되는 삼육구
 //for{
 //  for{
 //구조 가능!!
