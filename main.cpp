@@ -1,21 +1,18 @@
 #include <iostream>
 
 int main(){
-    int a,i; 
+    int i,j,k, c=0,r,g,b; 
     
-    scanf("%d",&a);
+    scanf("%d%d%d",&r,&g,&b);
     
-    for(i=1;i<=a;i++){
-      if(i%10==3||i%10==6||i%10==9){
-        printf("%s ","X");
-        }else{
-          printf("%d ",i);
-          }
-    }
-} 
-//20까지 커버되는 삼육구
-//for{
-//  for{
-//구조 가능!!
-//}}
+    for(i=0;i<r;i++)
+      for(j=0;j<g;j++)
+        for(k=0;k<b;k++)
+        {
+          printf("%d %d %d\n",i, j, k);
+          c++; //C++을 통해서 반복횟수의 경우의 수를 출력할 수 있다!         
+        }printf("%d",c);
+}
+          //i<r을 통해서 0~n-1까지 구할 수 있어서 n개를 구할 수 있다!
+//빛의 강약에 따라 0 ~ n-1 까지 n가지의 빛 색깔을 만들 수 있다.
 
