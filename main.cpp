@@ -1,10 +1,10 @@
 #include <iostream>
 
 int main(){
-    long int h,b,c,s; 
+    long int h,b,c; 
     
-    scanf("%ld%ld%ld%ld",&h,&b,&c,&s);
-    printf("%.1f MB",float(h*b*c*s)/(1024*1024*8));
+    scanf("%ld%ld%ld",&h,&b,&c);
+    printf("%.2f MB",float(h*b*c)/(1024*1024*8));
 }
           //i<r을 통해서 0~n-1까지 구할 수 있어서 n개를 구할 수 있다!
 //빛의 강약에 따라 0 ~ n-1 까지 n가지의 빛 색깔을 만들 수 있다.
