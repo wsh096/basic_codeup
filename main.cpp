@@ -1,16 +1,32 @@
 #include <iostream>
 
 int main(){
-    int a,b,c, day; 
-    
-    scanf("%d%d%d",&a,&b,&c);
-    ////for 반목문에서 가운데의 조건이 빠진 경우 무한 반복된다.
-      for(day=1; ;day++){
-      
-      if(day%a==0&&day%b==0&&day%c==0)
-      
-      break;
-      }printf("%d ",day);
-      //참이면 건너 띄고 반복함
-     
+    int n,i,t;
+    int a[24]={};
+    scanf("%d", &n);//개수입력받기
+    for(i=1;i<=n;i++)//i!=0
+    {
+      scanf("%d",&t);
+      a[t]+=1;
+    }
+    for(i=1;i<=23;i++)
+    {
+      printf("%d ",a[i]);
+    }     
+
+
+
+//int n, i, t;
+//int a[24]={};
+//scanf("%d", &n); //개수 입력받기
+//for(i=1; i<=n; i++) //개수만큼 입력받기
+//{
+// scanf("%d", &t); //읽어서
+//  a[t]=a[t]+1; //들어있던 값에 1만큼 더해 다시 저장. a[t]+=1 과 같다.
+//}
+//for(i=1; i<=23; i++)
+//{
+//  printf("%d ", a[i]); //1~23 번 배열에 저장되어있는 값 출력하기
+//}
+
 }
