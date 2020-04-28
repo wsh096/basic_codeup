@@ -4,7 +4,7 @@ int main(){
     int n,i,t;
     int a[24]={};
     scanf("%d", &n);//개수입력받기
-    for(i=1;i<=n;i++)//i!=0
+    for(i=0;i<=n;i++)//i!=0
     {
       scanf("%d",&t);
       a[t]+=1;
